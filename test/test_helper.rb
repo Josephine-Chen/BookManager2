@@ -1,6 +1,7 @@
 # TODO: SimpleCov required here...
-
-
+require 'simplecov'
+SimpleCov.start 'rails'
+reauire 'turn/autorun'
 
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path('../../config/environment', __FILE__)
@@ -15,7 +16,7 @@ class ActiveSupport::TestCase
   #
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
   # -- they do not yet inherit this setting
-  fixtures :all
+  #fixtures :all
 
 
   # ----------------------------------------------------
@@ -85,4 +86,5 @@ class ActiveSupport::TestCase
 end
 
 # Formatting test output a litte nicer ...
+Turn.config.format = :outline
 
