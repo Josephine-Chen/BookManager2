@@ -1,7 +1,7 @@
 # TODO: SimpleCov required here...
 require 'simplecov'
 SimpleCov.start 'rails'
-reauire 'turn/autorun'
+require 'turn/autorun'
 
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path('../../config/environment', __FILE__)
